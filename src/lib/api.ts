@@ -54,12 +54,12 @@ export async function getEspacesVerts(
   );
 
   return response.data.results.map((item) => ({
-    type: item.categorie ?? "Espace Vert",
-    nom: item.nom ?? "Nom inconnu",
+    type: item.type ?? "Espace Vert",
+    nom: item.nom ?? "Inconnu",
     adresse:
       `${item.adresse ?? ""} ${item.arrondissement ?? ""}`.trim() ||
       "Adresse inconnue",
-    dispo: item.ouvert_24h ?? "Disponibilité inconnue",
+    dispo: item.horaires_periode ?? item.horaires_lundi ?? "Horaires inconnus",
   }));
 }
 

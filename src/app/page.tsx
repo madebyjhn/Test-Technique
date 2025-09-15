@@ -63,8 +63,8 @@ export default function HomePage() {
 
   useEffect(() => {
     if (filtered === "fontaines") setLastColumnName("Disponible");
-    else if (filtered === "espaces") setLastColumnName("Gratuit");
-    else if (filtered === "equipements") setLastColumnName("Horaires");
+    else if (filtered === "equipements" || "espaces")
+      setLastColumnName("Horaires");
     else setLastColumnName("");
   }, [filtered]);
 
