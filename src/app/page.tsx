@@ -71,7 +71,7 @@ export default function HomePage() {
   return (
     <main className="max-w-5xl mx-auto p-8 flex flex-col items-center rounded-lg shadow-lg space-y-6">
       <h1 className="text-4xl font-extrabold mb-8 text-purple-950">
-        🌿 Ilots de fraîcheur à Paris
+        Ilots de fraîcheur à Paris
       </h1>
 
       <div className="flex gap-4 w-full max-w-md">
