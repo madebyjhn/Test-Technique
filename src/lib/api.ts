@@ -34,7 +34,6 @@ export async function getFontaine(
     adresse:
       `${item.voie ?? ""} ${item.commune ?? ""}`.trim() || "Adresse inconnue",
     dispo: item.dispo ?? "Disponibilité inconnue",
-    payant: "non",
   }));
 }
 
@@ -87,6 +86,5 @@ export async function getEquipements(
       `${item.adresse ?? ""} ${item.arrondissement ?? ""}`.trim() ||
       "Adresse inconnue",
     dispo: item.horaires_periode ?? item.horaires_lundi ?? "Horaires inconnus",
-    payant: item.payant ?? "Tarif inconnu",
   }));
 }
